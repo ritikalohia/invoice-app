@@ -186,7 +186,7 @@ export default function BillTable() {
               <StyledTableCell align="center">{row.gstAmount}</StyledTableCell>
               <StyledTableCell align="center">{row.netAmount}</StyledTableCell>
               <StyledTableCell align="center"><Button type={row.status} /></StyledTableCell>
-              <StyledTableCell align="center"><Link to={{pathname:"/" + `${row._id}`}} state={{props:row.lineItem, username:row.name, item_id: row._id, status:row.status}} ><ArrowForwardIosIcon className='arrowForward'/></Link></StyledTableCell>
+              <StyledTableCell align="center"><Link to={{pathname: `/${row._id}`}} state={{props:row.lineItem, username:row.name, item_id: row._id, status:row.status}} ><ArrowForwardIosIcon className='arrowForward'/></Link></StyledTableCell>
               <StyledTableCell></StyledTableCell>
             </StyledTableRow>
           ))}
